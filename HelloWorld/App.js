@@ -26,34 +26,34 @@ type Props = {};
 export default class App extends Component<Props> {
   render() {
     return (
-      <WKWebView
-        source={{uri: 'http://192.168.0.13:3000'}}
-        style={{marginTop: 20}}
-      />
-      // <View style={styles.container}>
-      //   <TouchableHighlight style={[buttonStyles.core, buttonStyles.spacer]} underlayColor="#999" activeOpacity={0.8} onPress={()=>{}}>
-      //     <Text>Default Normal</Text>
-      //   </TouchableHighlight>
-      //   <TouchableHighlight style={[buttonStyles.core, buttonStyles.hairlineBorder ,buttonStyles.spacer]}>
-      //     <Text>Default HairLine</Text>
-      //   </TouchableHighlight>
-      //   <TouchableHighlight style={[buttonStyles.core, buttonStyles.primary ,buttonStyles.spacer]}>
-      //     <Text>Primary Normal</Text>
-      //   </TouchableHighlight>
-      //   <TouchableHighlight style={[buttonStyles.core,buttonStyles.primary, buttonStyles.hairlineBorder ]}>
-      //     <Text>Primary HairLine</Text>
-      //   </TouchableHighlight>
+      // <WKWebView
+      //   source={{uri: 'https://m.naver.com'}}
+      //   style={{marginTop: 20}}
+      // />
+      <View style={styles.container}>
+        <TouchableHighlight style={[buttonStyles.core, buttonStyles.spacer]} underlayColor="#999" activeOpacity={0.8} onPress={()=>{}}>
+          <Text>Default Normal</Text>
+        </TouchableHighlight>
+        <TouchableHighlight style={[buttonStyles.core, buttonStyles.hairlineBorder ,buttonStyles.spacer]}>
+          <Text>Default HairLine</Text>
+        </TouchableHighlight>
+        <TouchableHighlight style={[buttonStyles.core, buttonStyles.primary ,buttonStyles.spacer]}>
+          <Text>Primary Normal</Text>
+        </TouchableHighlight>
+        <TouchableHighlight style={[buttonStyles.core,buttonStyles.primary, buttonStyles.hairlineBorder ]}>
+          <Text>Primary HairLine</Text>
+        </TouchableHighlight>
 
-      //   <Text style={styles.welcome}>
-      //     Welcome to my first React Native application!!
-      //   </Text>
-      //   <Text style={styles.instructions}>
-      //     To get started, edit App.js
-      //   </Text>
-      //   <Text style={styles.instructions}>
-      //     {instructions}
-      //   </Text>
-      // </View>
+        <Text style={styles.welcome}>
+          Welcome to my first React Native application!!
+        </Text>
+        <Text style={styles.instructions}>
+          To get started, edit App.js
+        </Text>
+        <Text style={styles.instructions}>
+          {instructions}
+        </Text>
+      </View>
 
     );
   }
