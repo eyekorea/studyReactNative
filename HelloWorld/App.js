@@ -5,6 +5,7 @@
  */
 
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 import {
   Platform,
   StyleSheet,
@@ -21,6 +22,8 @@ const instructions = Platform.select({
   android: 'Double tap R on your keyboard to reload,\n' +
     'Shake or press menu button for dev menu',
 });
+
+
 
 type Props = {};
 export default class App extends Component<Props> {
@@ -53,6 +56,7 @@ export default class App extends Component<Props> {
         <Text style={styles.instructions}>
           {instructions}
         </Text>
+        
       </View>
 
     );
@@ -99,3 +103,13 @@ const buttonStyles = StyleSheet.create({
     marginBottom: 10
   }
 });
+
+const Button = ({style, children, ...otherProps}) => (
+  <TouchableHighlight style = {[buttonStyles.core, buttonStyles.hairlineBorder, style]} {...otherProps} underlayColor = "#efefef" activeOpacity = {0.8}>
+    {children}
+  </TouchableHighlight>
+);
+Button.propTypes = {
+  style : TouchableHighlight.propTypes.style,
+  children : PropTypes.node
+};
