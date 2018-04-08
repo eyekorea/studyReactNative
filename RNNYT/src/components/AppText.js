@@ -1,4 +1,5 @@
-import React, { PropTypes } from 'react';
+import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 import { Text } from 'react-native';
 import * as globalStyles from '../styles/global';
 
@@ -8,7 +9,7 @@ const AppText = ({ children, style, ...rest }) => (
     </Text>
 );
 
-AppText.PropTypes = {
+AppText.propTypes = {
     style: Text.PropTypes.style,
     children: PropTypes.node
 };

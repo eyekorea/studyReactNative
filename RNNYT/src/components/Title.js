@@ -1,4 +1,5 @@
-import React, { PropTypes } from "react";
+import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 import {
     StyleSheet,
     Text
@@ -13,7 +14,7 @@ const Title = ({style, children}) => (
     </AppText>
 );
 
-Title.PropTypes = {
+Title.propTypes = {
     style : Text.PropTypes.style,
     children : PropTypes.node
 };
